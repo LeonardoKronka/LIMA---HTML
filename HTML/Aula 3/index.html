@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3</title>
+</head>
+<body>
+<!-- Cabeçalho -->
+  <header>
+    <h1>Cores, Imagens e Links</h1>
+  </header>
+  <main>
+
+    <!-- Cores em HTML -->
+    <section>
+      <h1>Formatos de Cor no CSS:</h1>
+      <h2 style="color: #e6350d;">Título com cor em Hexadecimal</h2>
+      <h2 style="color: rgb(0, 128, 255);">Título com cor em RGB</h2>
+      <h2 style="color: rgba(0, 128, 0, 0.4);">Título com cor em RGBA</h2>
+    </section>
+    <hr>
+        <!-- Cor em elemento de texto e fundo do texto -->
+    <section>
+      <p style="color: blue;">Cor em elemento de texto</p>
+      <p style="background-color: blue; color: yellow;">Cor no fundo do texto</p>
+    </section>
+    <hr>
+    <!-- Imagens em HTML -->
+    <!-- Imagem como elemento da página -->
+    <!-- <img src="assets/champions.jpg" alt="Teste" title="Teste"> -->
+    <!-- <hr> -->
+
+    <!-- Imagem como background -->
+    <section>
+      <div style="border: 1px solid red; width: 300px; 
+      height: 168px; color: yellow; text-align: center; 
+      background-image: url('assets/champions.jpg'); 
+      background-size: contain; background-repeat: no-repeat; background-position: center;">
+        <h2>Imagem como background</h2>
+        <p>Esta seção tem uma imagem de fundo.</p>
+      </div>
+    </section>
+    <!-- Vídeos Locais -->
+    <section>
+      <h1>Vídeos em HTML</h1>
+      <video src="assets/senai.mp4" controls autoplay  loop width="560" height="315" >
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </section>
+    <hr> 
+
+    <!-- Vídeos Externos iframe -->
+    <section>
+      <h1>Vídeos Externos</h1>
+      <iframe src="https://www.youtube.com/embed/ZA3ffO8v9ho?si=tlDncOTtBj4hqDoN" allowfullscreen
+      title="Vídeo Externos do SENAI" loading="lazy" width="560" height="315">
+      </iframe>
+      <hr>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29737.86813900379!2d-47.02699793358849!3d-21.301787279624104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7a5a5c9084a89%3A0x7704d0278043ff7c!2sMilagre%2C%20Monte%20Santo%20de%20Minas%20-%20MG%2C%2037958-000!5e0!3m2!1spt-BR!2sbr!4v1756924696869!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <hr> 
+</body>
+</html>
