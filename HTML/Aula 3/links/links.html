@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: orangered;
+        }
+        /* Link normal*/
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+        /* Link visitado */
+        a:visited {
+            color: purple;
+            text-decoration: none;
+        }
+        /* Link quando o mouse está sobre ele */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+            font-size: 15px;
+        }
+        /* Link quando está sendo clicado */
+        a:active {
+            color: orange;
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1 id="topo">Exemplo de Links na mesma Página</h1>
+        <a href="#secao1">Ir para Seção 1</a>
+        <br>
+        <a href="#secao2">Ir para Seção 2</a> 
+        <br>
+        <a href="#secao3">Ir para Seção 3</a>
+    </header>
+    <h2 id="secao1">Seção 1</h2>
+    <br><br><br><br><br><br><br><br><br>
+    <h2 id="secao2">Seção 2</h2>
+    <br><br><br><br><br><br><br><br><br>
+    <h2 id="secao3">Seção 3</h2>
+    <hr>
+    <section style="text-align: center;">
+        <h1>Exemplo de Links entre Páginas do mesmo site</h1>
+        <p><a href="sobre.html">Ir para a página Sobre</a></p>
+    </section>
+        <br><br><br><br><br><br><br><br><br>
+    <hr>
+    <section style="text-align: center;">
+        <h1>Exemplo de Abertura de Arquivo no Navegador</h1>
+        <p><a href="../assets/champions.jpg" target="_blank" download>Abrir arquivo 👌</a></p>
+    </section>
+
+    <footer style="text-align: center;">
+        <p><a href="#topo">Voltar ao Topo</a></p>
+    </footer>
+    
+</body>
+</html>

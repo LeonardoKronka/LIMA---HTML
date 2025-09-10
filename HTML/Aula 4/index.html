@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 4 - Listas, Tabelas e Formulários </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333;
+        }
+        h2 {
+            color: blue;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        table {
+            border: 1px solid red;
+            border-radius: 15px;
+            border-collapse: separate; /* Permite arredondar */
+            border-spacing: 0; /* Remove o espaço extra entre células */
+            width: 50%;
+            overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
+        }
+        td {
+            border: 1px solid red;
+            padding: 10px;
+            text-align: left;
+            color: red
+        }
+        th {
+            border: 1px solid red;
+            padding: 10px;
+            text-align: center;
+            color: blue; 
+            background-color: lightgray;
+            overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        dd {
+            color: gray;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Listas, Tabelas e Formulários</h1>
+    </header>
+    <main>
+        <section>
+            <h2>
+                Glossário
+            </h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Linguagem de marcação usada para estruturar páginas na web</dd>
+
+                <dt>CSS</dt>
+                <dd>Folhas de estilo, usadas para definir aparência e layout</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação usada para criar interatividade em páginas web</dd>
+
+
+            </dl>
+        </section>
+        <hr>
+        <section>
+            <h2>Tabela de Preços</h2>
+            <table cellpadding="15" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">Leonardo</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Zé Sanqueta</td>
+                        <td>124</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Daniel</td>
+                        <td>9</td>
+                    </tr>
+                </tbody>
+            </table>
+    </main>
+    
+</body>
+</html>
