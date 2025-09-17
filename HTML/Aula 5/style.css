@@ -1,0 +1,73 @@
+/* *= aplica a todos os elementos*/
+* {
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+}
+/* .classe = reutilizável em vários elementos */
+.destaque {
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid darkblue;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* #id = Único, para um elemento específico */
+#titulo-principal {
+    text-align: center;
+    color: darkblue;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+/* tag = Altera todos os elementos daquela tag */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000000;
+    font-family: 'Verdana', sans-serif;
+    margin: 10px 20px;
+}
+/* h1, h2, h3 = Agrupamento de seletores*/
+h1, h2, h3 {
+    color: darkblue;
+    font-family: 'Tahoma', sans-serif;
+    margin: 10px 20px;
+}
+
+h4 {
+    /* ESpaçamento */
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+img {
+    width: 200px;
+    height: auto;
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+ul {
+    list-style-type: square;
+    margin: 10px 40px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+li {
+    color: blue;
+}
+li::marker {
+    color: red;
+}

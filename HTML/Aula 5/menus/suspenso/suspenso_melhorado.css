@@ -1,0 +1,112 @@
+/* 
+  Estilização da lista principal de navegação (ul).
+  - remove marcadores e espaçamentos padrões das listas
+  - define cor de fundo e exibe os itens em linha (flex)
+*/
+ul {
+    list-style: none; /* remove o marcador padrão da lista */
+    padding: 0;       /* remove padding padrão do elemento ul */
+    margin: 0;        /* remove margin padrão do elemento ul */
+    background-color: #333; /* cor de fundo da barra de navegação */
+    display: flex;    /* organiza os li de forma horizontal */
+}
+
+/* 
+  Cada item da lista (li) precisa ser relative para que o submenu posicionado
+  absolutamente (position: absolute) seja referenciado a este elemento pai.
+*/
+li {
+    position: relative; /* Necessário para o submenu */
+}
+
+/* 
+  Estilo dos links principais (a) dentro do menu.
+  - display block para que toda a área do item seja clicável
+  - padding para espaçamento interno
+  - cor e remoção de sublinhado
+  - transições suaves para transformações e mudanças de cor
+  - transform-origin para controlar o ponto de escala
+  - will-change para avisar o navegador sobre transformações (performance)
+*/
+a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease;
+    transform-origin: left center; /* ponto de origem da escala: do lado esquerdo */
+    will-change: transform; /* dica de otimização para o navegador */
+}
+
+/* 
+  Estado :hover dos links principais:
+  - altera fundo e cor do texto
+  - aplica escala para efeito de destaque
+  - itálico para ênfase visual
+  - garante que não haja sublinhado
+*/
+a:hover {
+    background-color: #111;
+    color: aqua;
+    transform: scale(1.2); /* aumenta o link ao passar o mouse */
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* 
+  Estilização do submenu (classe .sub):
+  - inicialmente oculto (display: none)
+  - posicionado de forma absoluta relativo ao li pai
+  - top: 100% coloca o submenu logo abaixo do item pai
+  - left: 0 alinha à esquerda do pai
+  - cor de fundo levemente diferente para contrastar
+  - min-width para garantir espaço mínimo para os itens do submenu
+  - z-index para garantir que o submenu fique acima de outros elementos
+*/
+ul .sub { 
+    display: none; /* Esconde o submenu */
+    position: absolute; /* Posiciona o submenu em relação ao pai */
+    top: 100%; /* Posiciona o submenu logo abaixo do item pai */
+    left: 0;
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 150px; /* Largura mínima para o submenu */
+    z-index: 1000; /* Garante que o submenu fique acima de outros elementos */
+}
+
+/* 
+  Exibe o submenu quando o mouse está sobre o li pai.
+  - usa o seletor composto li:hover .sub para alterar o display para block
+*/
+ul li:hover .sub {
+    display: block; /* Mostra o submenu ao passar o mouse sobre o item pai */
+}
+
+/* 
+  Links dentro do submenu (classe .linksub):
+  - padding para espaçamento interno
+  - cor e remoção de sublinhado
+  - display block para ocupar toda a largura do submenu
+*/
+.sub .linksub {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* 
+  Estado :hover dos links do submenu:
+  - muda a cor de fundo e a cor do texto
+  - aplica leve escala e itálico para consistência visual com os links principais
+  - remove sublinhado
+*/
+.sub .linksub:hover {
+    background-color: #555;
+    color: aquamarine;
+    transform: scale(1.1);
+    font-style: italic;
+    text-decoration: none;
+}
