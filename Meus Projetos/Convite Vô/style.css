@@ -1,0 +1,80 @@
+/* Define estilo geral da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte usada no site */
+  margin: 0; /* Remove margem padrão */
+  padding: 0; /* Remove espaçamento padrão */
+  background: linear-gradient(#e0d2b8, #a47148); /* Fundo em degradê com cores de café */
+  color: #3e2c1c; /* Cor padrão do texto */
+  display: flex; /* Usa flexbox para centralizar */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Ocupa 100% da altura da tela */
+}
+
+/* Estilo da caixa principal do convite */
+.card {
+  background: #fff8f0; /* Fundo clarinho */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2); /* Sombra */
+  max-width: 500px; /* Largura máxima */
+  text-align: center; /* Centraliza o texto */
+  padding: 30px 20px; /* Espaçamento interno */
+  position: relative; /* Necessário para o ícone decorativo */
+  overflow: hidden; /* Impede que elementos ultrapassem a caixa */
+}
+
+/* Ícone decorativo de café no fundo */
+.card::before {
+  content: "☕"; /* Insere emoji de café */
+  font-size: 6rem; /* Tamanho grande */
+  color: rgba(164,113,72,0.1); /* Cor bem clarinha */
+  position: absolute; /* Fixa em relação à caixa */
+  top: -20px; /* Move para cima */
+  left: -20px; /* Move para esquerda */
+  transform: rotate(-20deg); /* Gira um pouco */
+}
+
+/* Título do convite */
+h1 {
+  color: #5a3d2b; /* Cor marrom */
+  font-size: 2.2rem; /* Tamanho grande */
+  margin-bottom: 10px; /* Espaço abaixo */
+}
+
+/* Parágrafos gerais */
+p {
+  font-size: 1.1rem; /* Tamanho médio */
+  margin: 10px 0; /* Espaçamento entre linhas */
+}
+
+/* Texto destacado (nome do aniversariante) */
+.highlight {
+  font-weight: bold; /* Negrito */
+  color: #a47148; /* Cor marrom mais forte */
+}
+
+/* Botão de confirmar presença */
+.btn {
+  display: inline-block; /* Exibe como botão */
+  margin-top: 20px; /* Espaço acima */
+  background: #a47148; /* Cor marrom */
+  color: #fff; /* Texto branco */
+  padding: 12px 25px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold; /* Negrito */
+  transition: 0.3s; /* Suaviza animação no hover */
+}
+
+/* Efeito ao passar o mouse no botão */
+.btn:hover {
+  background: #814c2d; /* Fica mais escuro */
+  transform: scale(1.05); /* Aumenta levemente */
+}
+
+/* Rodapé */
+footer {
+  margin-top: 25px; /* Espaço acima */
+  font-size: 0.9rem; /* Texto menor */
+  color: #6b4f3f; /* Marrom claro */
+}
