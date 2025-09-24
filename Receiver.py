@@ -6,7 +6,7 @@ PORT = 5000
 USERNAME = input("Digite seu nome: ")
 
 # Lista de IPs dos PCs que vão receber
-DEST_IPS = ["10.140.170.46", "10.140.170.34"]  # coloque os IPs que quer
+DEST_IPS = ["10.140.170.32"]  # coloque os IPs que quer
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind(("", PORT))

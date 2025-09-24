@@ -1,0 +1,89 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/*ativação do flex para todos os cotainers*/
+/*container flex e itens flex*/
+.container-flex {
+    display: flex;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    gap: 10px;/*Espaçamento entre os itens (sempre usado no container pai)*/
+}
+.item-flex {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+}
+/*2. Flex Direction =========================================================================================*/
+.direcao-linha {
+
+    flex-direction: row;/*padrão*/
+}
+.direcao-coluna {
+    flex-direction: column;
+}
+
+/*3- flex-wrap - quebra de linha ============================================================================*/
+.wrap {
+    flex-wrap: wrap;
+}
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+/*4- justify-content - alinhamento horizontal ===============================================================*/
+.justificar-inicio {
+    justify-content: start;
+}
+.justificar-fim {
+    justify-content: end;
+}
+.justificar-centro {
+    justify-content: center;
+}
+.justificar-space-between {
+    justify-content: space-between;
+}
+.justificar-space-around {
+    justify-content: space-around;
+}
+.justificar-space-evenly {
+    justify-content: space-evenly;
+}
+
+/*5- align-items - alinhamento*/
+.alinhar-items .container-flex {
+    height: 300px;
+}
+.alinhar-stretch {
+    align-items: stretch; /*padrao*/
+}
+.alinhar-inicio {
+    align-items: start;
+}
+.alinhar-fim {
+    align-items: end;
+}
+.alinhar-centro {
+    align-items: center;
+}
+.alinhar-baseline {
+    align-items: baseline;
+}
