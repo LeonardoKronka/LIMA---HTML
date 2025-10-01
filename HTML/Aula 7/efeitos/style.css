@@ -1,0 +1,72 @@
+button {
+    background: blue;
+    color: white;
+    transition: background 1s ease; /* duração e efeito*/
+}
+
+button:hover {
+    background: darkblue;
+}
+
+@keyframes piscar {
+    0% {opacity: 1; }
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* div {
+    animation: piscar 2s infinite;
+    width: 100px;
+    height: 100px;
+    background: red;   
+    margin: 20px;
+    text-align: center;
+    line-height: 100px; 
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+    border: 2px solid darkred;
+    display: inline-block; 
+    cursor: pointer; 
+    user-select: none; 
+    transition: transform 0.3s ease; 
+    
+}
+div:hover {
+    transform: translate(20px, 20px);
+} */
+#div1 {
+    background: linear-gradient(to right, red, yellow);
+    width: 100%;
+}
+#div2 {
+    background: radial-gradient(circle, blue, white);
+    width: 100%;
+}
+/* =============================================================================================== */
+/*img:hover {
+    transform: rotate(360deg); 
+    transition: transform 0.5s;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7); 
+}*/
+
+img:hover{
+    animation: infinito 0.5s linear infinite;
+}
+
+img {
+    border-radius: 50%;
+}
+@keyframes infinito {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+button:hover {
+    transform: scale(1.2); /* aumenta o botão ao passar o mouse */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7); /* sombra mais intensa ao passar o mouse */
+    font-style: italic; /* deixa o texto em itálico ao passar o mouse */
+    text-decoration: none; /* garante que não haja sublinhado */
+    transition: transform 0.3s ease; /* transição suave para a transformação */
+}
