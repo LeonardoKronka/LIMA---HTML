@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplos de Flexbox</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <!-- 1. Container Flex e Itens Flex -->
@@ -132,6 +133,21 @@
         <div class="item-flex">item 3</div>
       </div>
     </section>
+    <!-- 5.1. align-content -->
+    <section>
+      <h2>5.1 align-content (alinha as linhas dentro do container)</h2>
+      <h3>flex-start | flex-end | center | stretch | space-between | space-around | <space-evenly></space-evenly></h3>
+      <div class="container-flex wrap alinhar-conteudo">
+        <div class="item-flex caixa">1</div>
+        <div class="item-flex caixa">2</div>
+        <div class="item-flex caixa">3</div>
+        <div class="item-flex caixa">4</div>
+        <div class="item-flex caixa">5</div>
+        <div class="item-flex caixa">6</div>
+        <div class="item-flex caixa">7</div>
+        <div class="item-flex caixa">8</div>
+      </div>
+    </section>
 
     <!-- 6. order -->
     <section>
@@ -145,7 +161,7 @@
 
     <!-- 7. flex-grow -->
     <section>
-      <h2>flex-grow, flex-shrink, flex-basis, flex</h2>
+      <h2>7. flex-grow, flex-shrink, flex-basis, flex</h2>
       <h3>flex-grow</h3>
       <div class="container-flex exemplo-grow">
         <div class="item-flex crescer1">item 1</div>
@@ -156,7 +172,7 @@
 
     <!-- 8. align-self -->
     <section class="alinhar-items-individuais">
-      <h2>align-self (alinhamento individual)</h2>
+      <h2>8. align-self (alinhamento individual)</h2>
       <div class="container-flex">
         <div class="item-flex self-inicio">item 1 (flex-start)</div>
         <div class="item-flex self-centro">item 2 (center)</div>
