@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="grid-container menu-principal">
+            <h1>Pesquisa Aplicada - Banco de Dados - SGBD</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tópicos</a>
+                    <ul class="sub">
+                        <li><a class="linksub" href="oque_e.html">Oque é e para que serve</a></li>
+                        <li><a class="linksub" href="funcoes_principais.html">Funções Principais</a></li>
+                        <li><a class="linksub" href="exemplos.html">Exemplos Práticos</a></li>
+                        <li><a class="linksub" href="tipos.html">Tipos</a></li>
+                        <li><a class="linksub" href="caracteristicas.html">Características e Importância no DS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--Tipos de banco de dados-->
+    <section>
+        <div class="grid-container conteudo-principal">
+            <h1>Relacional e Não Relacional</h1>
+            <h2>Banco de Dados Relacional</h2>
+            <p>Um banco de dados relacional organiza os dados em tabelas que podem ser relacionadas entre si. Cada tabela contém linhas e colunas, onde as colunas representam os atributos dos dados e as linhas representam os registros. Exemplos populares de SGBDs relacionais incluem MySQL, PostgreSQL e Oracle Database.</p>
+            <h2>Banco de Dados Não Relacional</h2>
+            <p>Um banco de dados não relacional, também conhecido como NoSQL, armazena os dados de maneira diferente das tabelas tradicionais. Eles podem usar formatos como documentos, grafos, chave-valor ou colunas largas. Esses bancos de dados são frequentemente usados para grandes volumes de dados, alta escalabilidade e flexibilidade. Exemplos populares de SGBDs não relacionais incluem MongoDB, Cassandra e Redis.</p>
+        </div>
+    </section>
+    <!--Comparação entre os dois-->
+    <section>
+        <div class="grid-container comparacao-tipos">
+            <h2>Comparação entre Banco de Dados Relacional e Não Relacional</h2>
+            <table border="1">
+                <tr>
+                    <th>Característica</th>
+                    <th>Banco de Dados Relacional</th>
+                    <th>Banco de Dados Não Relacional</th>
+                </tr>
+                <tr>
+                    <td>Estrutura</td>
+                    <td>Tabelas com linhas e colunas</td>
+                    <td>Documentos, grafos, chave-valor, colunas largas</td>
+                </tr>
+                <tr>
+                    <td>Escalabilidade</td>
+                    <td>Vertical (aumentar capacidade do servidor)</td>
+                    <td>Horizontal (adicionar mais servidores)</td>
+                </tr>
+                <tr>
+                    <td>Flexibilidade</td>
+                    <td>Menos flexível, esquema rígido</td>
+                    <td>Mais flexível, esquema dinâmico</td>
+                </tr>
+                <tr>
+                    <td>Exemplos</td>
+                    <td>MySQL, PostgreSQL, Oracle Database</td>
+                    <td>MongoDB, Cassandra, Redis</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

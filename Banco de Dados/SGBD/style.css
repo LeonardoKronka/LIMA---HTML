@@ -1,0 +1,79 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+}
+
+li {
+    position: relative;
+}
+
+a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease;
+    transform-origin: left center;
+    will-change: transform;
+}
+a:hover {
+    background-color: #111;
+    color: aqua;
+    transform: scale(1.2);
+    font-style: italic;
+    text-decoration: none;
+}
+ul .sub { 
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+ul li:hover .sub {
+    display: block;
+}
+
+.sub .linksub {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sub .linksub:hover {
+    background-color: #555;
+    color: aquamarine;
+    transform: scale(1.1);
+    font-style: italic;
+    text-decoration: none;
+}
+/* estilização da pagina "oque é um banco de dados?" */
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    margin-top: 20px;
+}
+h2 {
+    color: darkblue;
+    font-family: 'Tahoma', sans-serif;
+    margin: 10px 20px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000000;
+    font-family: 'Verdana', sans-serif;
+    margin: 10px 20px;
+}
